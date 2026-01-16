@@ -1,0 +1,6 @@
+@TradeDiary.API_HostAddress = http://localhost:5030
+
+GET {{TradeDiary.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

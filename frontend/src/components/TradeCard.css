@@ -1,0 +1,135 @@
+.trade-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-lg);
+    padding: 20px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.trade-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--accent-primary);
+}
+
+.trade-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.trade-coin {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.coin-name {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.bot-badge {
+    font-size: 11px;
+    padding: 4px 8px;
+    background: var(--info-bg);
+    color: var(--info);
+    border-radius: 12px;
+}
+
+.trade-time {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.trade-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.detail-row {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.detail-label {
+    font-size: 12px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.detail-value {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.trade-pnl {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+    border-radius: var(--border-radius);
+    margin-bottom: 16px;
+}
+
+.trade-pnl.positive {
+    background: var(--success-bg);
+}
+
+.trade-pnl.negative {
+    background: var(--danger-bg);
+}
+
+.pnl-value {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.trade-pnl.positive .pnl-value {
+    color: var(--success);
+}
+
+.trade-pnl.negative .pnl-value {
+    color: var(--danger);
+}
+
+.pnl-percent {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.trade-pnl.positive .pnl-percent {
+    color: var(--success);
+}
+
+.trade-pnl.negative .pnl-percent {
+    color: var(--danger);
+}
+
+.trade-footer {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.trade-emotion,
+.trade-strategy,
+.trade-timeframe {
+    font-size: 12px;
+    padding: 4px 10px;
+    background: var(--bg-tertiary);
+    border-radius: 12px;
+    color: var(--text-secondary);
+}
+
+.trade-strategy {
+    background: var(--accent-gradient);
+    color: white;
+}
