@@ -31,7 +31,7 @@ const RegisterPage: React.FC = () => {
 
         try {
             await register(email, username, password);
-            navigate('/');
+            navigate('/dashboard');
         } catch (err: any) {
             setError(err.response?.data?.message || 'Kayıt başarısız. Lütfen tekrar deneyin.');
         } finally {
